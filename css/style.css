@@ -97,3 +97,8 @@ p{
 .controls{
     margin-bottom: 50px;
 }
+
+.pie-pagina{
+    width: 100%;
+    background-color: cornflowerblue ;
+}
