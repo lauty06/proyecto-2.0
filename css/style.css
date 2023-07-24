@@ -6,6 +6,8 @@ body{
     min-height: 100vh;
 }
 
+/*footer*/
+
 footer{
    height:20vh;
    bottom: 0;
@@ -20,6 +22,9 @@ footer{
     height: 75px;
     align-items: flex-end;
 }
+
+/*productos*/
+
 .cobtainer-items{
     display: grid;
     gap: 20px;
@@ -67,8 +72,28 @@ p{
     min-width: 320px;
     margin: auto;
 }
-img{
+.item{
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);}
+
+    /*registro*/
+    
+.form-register{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+}
+
+.form-register .botons{
+    width: 100%;
+    background: mediumblue;
+    color: white;
+    border: none;
+}
+.controls{
+    margin-bottom: 50px;
 }
