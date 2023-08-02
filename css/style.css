@@ -1,26 +1,57 @@
-@charset "UTF-8";
 body {
+  font-family: "Exo 2", sans-serif;
   height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(90deg, rgb(111, 255, 224) 0%, rgb(39, 103, 116) 50%, rgb(102, 236, 210) 95%);
+  background: linear-gradient(90deg, rgb(43, 111, 121) 0%, rgb(107, 246, 218) 36%, rgb(111, 255, 224) 49%, rgb(107, 246, 218) 63%, rgb(39, 103, 116) 100%);
 }
 
 header .logo {
   display: flex;
 }
 header .logo img {
+  width: 150px;
   height: 75px;
   align-items: flex-end;
 }
 
+main .col-sm-12.col-xl-12.col-xxl-12.bg-light.preguntas {
+  width: 700px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main summary {
+  background: rgb(43, 111, 121);
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+}
+main img.img.servicios {
+  width: 100%;
+  height: 700px;
+}
+main img.img-nosotros {
+  width: 70%;
+  height: 700px;
+}
+main .col-sm-12.col-xl-12.col-xxl-12.bg-light {
+  background: linear-gradient(90deg, rgb(43, 111, 121) 0%, rgb(107, 246, 218) 36%, rgb(111, 255, 224) 49%, rgb(107, 246, 218) 63%, rgb(39, 103, 116) 100%);
+}
+main img.d-block.w-100 {
+  width: 110px;
+  height: 500px;
+}
 main .container-fluid {
-  background: linear-gradient(90deg, rgb(111, 255, 224) 0%, rgb(39, 103, 116) 50%, rgb(102, 236, 210) 95%);
+  background: linear-gradient(90deg, rgb(43, 111, 121) 0%, rgb(107, 246, 218) 36%, rgb(111, 255, 224) 49%, rgb(107, 246, 218) 63%, rgb(39, 103, 116) 100%);
 }
 main .container-items {
-  width: 100€;
+  width: 100%;
   display: grid;
   gap: 25px;
   justify-items: center;
@@ -66,6 +97,9 @@ main .tittle {
 }
 main p {
   font-size: 1.2em;
+  padding: 10px;
+  background: rgb(43, 111, 121);
+  color: white;
 }
 main .container-img {
   width: 75vw;
@@ -75,14 +109,14 @@ main .container-img {
 }
 main .form-register {
   width: 400px;
-  background: #24303c;
+  background: rgb(43, 111, 121);
   margin: auto;
   margin-top: 100px;
   color: white;
 }
 main .form-register .botons {
   width: 100%;
-  background: mediumblue;
+  background: gray;
   color: white;
   border: none;
 }

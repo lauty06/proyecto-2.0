@@ -1,26 +1,59 @@
 body{
+    font-family: 'Exo 2', sans-serif;
     height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(90deg, rgba(111,255,224,1) 0%, rgba(39,103,116,1) 50%, rgba(102,236,210,1) 95%);
+    background: linear-gradient(90deg, rgba(43,111,121,1) 0%, rgba(107,246,218,1) 36%, rgba(111,255,224,1) 49%, rgba(107,246,218,1) 63%, rgba(39,103,116,1) 100%);
 }
 header{
     .logo{
         display:flex
     }
     .logo img{
+
+        width: 150px;
         height: 75px;
         align-items: flex-end;
     }
 }
 main{
+    .col-sm-12.col-xl-12.col-xxl-12.bg-light.preguntas{
+      width: 700px;
+      padding: 40px;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    summary{
+      background: rgba(43,111,121,1);
+      color: white;
+      padding: 20px;
+      font-weight: bold;
+    }
+     img.img.servicios{
+      width:100% ;
+      height: 700px;
+     }
+     img.img-nosotros{
+      width:70% ;
+      height: 700px;
+     }
+    .col-sm-12.col-xl-12.col-xxl-12.bg-light{
+      background: linear-gradient(90deg, rgba(43,111,121,1) 0%, rgba(107,246,218,1) 36%, rgba(111,255,224,1) 49%, rgba(107,246,218,1) 63%, rgba(39,103,116,1) 100%);
+    }
+     img.d-block.w-100{
+        width:110px ;
+        height: 500px;
+     }
     .container-fluid{
-        background: linear-gradient(90deg, rgba(111,255,224,1) 0%, rgba(39,103,116,1) 50%, rgba(102,236,210,1) 95%);
+      background: linear-gradient(90deg, rgba(43,111,121,1) 0%, rgba(107,246,218,1) 36%, rgba(111,255,224,1) 49%, rgba(107,246,218,1) 63%, rgba(39,103,116,1) 100%);
     }
     .container-items{
-        width: 100€;
+        width: 100%;
         display: grid;
         gap: 25px;
         justify-items: center;
@@ -66,6 +99,9 @@ main{
       }
       p{
         font-size: 1.2em;
+        padding: 10px;
+        background: rgba(43,111,121,1);
+        color: white;
       }
       .container-img{
         width: 75vw;
@@ -75,7 +111,7 @@ main{
       }
       .form-register{
         width: 400px;
-        background: #24303c;
+        background: rgba(43,111,121,1);
         margin: auto;
         margin-top: 100px;
         color: white;
@@ -83,7 +119,7 @@ main{
       
       .form-register .botons{
         width: 100%;
-        background: mediumblue;
+        background: gray;
         color: white;
         border: none;
       }
