@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Oswald:wght@200;300;500;600&display=swap');
-background:linear-gradient(90deg, rgba(0,181,176,1) 0%, rgba(0,54,55,0.8715861344537815) 51%, rgba(0,170,184,1) 100%);
-$bodycolor:red;
+$body:linear-gradient(90deg, rgba(0,181,176,1) 0%, rgba(0,54,55,0.8715861344537815) 51%, rgba(0,170,184,1) 100%);
+$color1:#fff;
+$color2:#015359;
 
 body{
     width: 100%;
@@ -9,7 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: $bodycolor;
+    background: $body;
   }
   img{
     max-width: 100%;
@@ -45,14 +46,14 @@ body{
       gap: 2rem;
     }
     .navbar .toggle_btn{
-      color: white;
+      color: $color1;
       font-size: 1.5rem;
       cursor: pointer;
       display: none;
     }
     .action_btn{
       background-color: rgb(0, 152, 152);
-      color: #fff;
+      color: $color1;
       padding: 0.5rem 1rem;
       border: none;
       outline: none;
@@ -64,7 +65,7 @@ body{
     }
     .action_btn:hover{
       scale: 1.05;
-      color: #fff;
+      color: $color1;
     }
     .action_btn:active{
       scale: 0.95;
@@ -122,7 +123,7 @@ body{
       font-size: 1rem;
     }
     a:hover{
-      color: #fff;
+      color: $color1;
     }
 
     /*carousel*/
@@ -153,14 +154,14 @@ body{
       pointer-events: none;
   }
   h3{
-    color: #fff;
+    color: $color1;
   }
     
   }
 main{
   /*nosotros scss*/
   .titulo-nosotros{
-    color: #fff;
+    color: $color1;
   }
   .contenedor-nosotros{
     display: flex;
@@ -175,16 +176,16 @@ main{
     display: block;
     padding: 20px;
     font-size: 20px;
-    background:#015359;
-    color: #fff;
+    background:$color2;
+    color: $color1;
     cursor: pointer;
   }
   .textos-2{
     display: block;
     padding: 20px;
     font-size: 20px;
-    background:#015359;
-    color: #fff;
+    background:$color2;
+    color:$color1;
     cursor: pointer;
   }
   @media screen and (max-width:900px){
@@ -198,8 +199,8 @@ main{
       display: block;
     padding: 20px;
     font-size: 20px;
-    background:#015359;
-    color: #fff;
+    background:$color2;
+    color: $color1;
     cursor: pointer;
     }
   }
@@ -217,14 +218,14 @@ main{
   /*registro de formulario*/
   .form-register{
     width: 400px;
-    background: #015359;
+    background: $color2;
     padding: 30px;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 100px;
     border-radius: 4px;
     font-family: 'calibri';
-    color: #fff;
+    color: $color1;
     box-shadow: 7px 13px 37px #000;
   }
   .form-register h4{
@@ -237,10 +238,10 @@ main{
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #fff;
+    border: 1px solid $color1;
     font-family: 'calibri';
     font-size: 18px;
-    color: #fff;
+    color: $color1;
   }
   .form-register p {
     height: 40px;
@@ -249,7 +250,7 @@ main{
     line-height: 40px;
   }
   .form-register a:hover {
-    color: white;
+    color: $color1;
     text-decoration: underline;
   }
   .form-register .botons{
@@ -257,8 +258,8 @@ main{
     background:rgb(0, 152, 152);
     border: none;
     padding: 12px;
-    color: #fff;
-    margin: 16px 0;
+    color: $color1
+    margin 16px 0;
     font-size: 16px;
   }
 
@@ -273,10 +274,10 @@ main{
     text-align: center;
     font-size: 40px;
     margin-bottom: 35px;
-    color: #fff;
+    color: $color1;
   }
   .acordeon {
-    color: #fff;
+    color: $color1;
     background: #0d676d;
     margin-bottom: 10px;
   }
@@ -284,8 +285,8 @@ main{
     display: block;
     padding: 20px;
     font-size: 20px;
-    background:#015359;
-    color: #fff;
+    background:$color2;
+    color: $color1;
     cursor: pointer;
     transition: all 300ms ease;
   }
@@ -327,7 +328,7 @@ main{
 
   font-family: 'Oswald', sans-serif;
   .titulo-product{
-    color: #fff;
+    color: $color1;
     padding-bottom: 15px;
   }
   /*producto apple*/
@@ -344,7 +345,7 @@ main{
         text-align: center;
         padding: 30px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
-        background-color: #fff;
+        background-color: $color1;
         border-radius: 10px 10px 10px 10px;
         margin-bottom: 15px;
       }
@@ -395,7 +396,7 @@ main{
         border: none;
         background: none;
         background-color: black;
-        color: white;
+        color: $color1;
         padding: 15px 10px ;
       }
       .tittle{
@@ -420,7 +421,7 @@ footer{
     margin: 0 10px;
   }
   .footer-content{
-    background: #015359;
+    background: $color2;
     
     color: cadetblue;
   }
@@ -449,7 +450,7 @@ footer{
   }
 }
 .pie-pagina{
-  background: #013c40;
+  background: $color2;
   color: cadetblue;
 }
 

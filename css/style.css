@@ -46,7 +46,7 @@ header .navbar .links {
   gap: 2rem;
 }
 header .navbar .toggle_btn {
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -247,7 +247,7 @@ main .form-register p {
   line-height: 40px;
 }
 main .form-register a:hover {
-  color: white;
+  color: #fff;
   text-decoration: underline;
 }
 main .form-register .botons {
@@ -255,8 +255,7 @@ main .form-register .botons {
   background: rgb(0, 152, 152);
   border: none;
   padding: 12px;
-  color: #fff;
-  margin: 16px 0;
+  color: #fff margin 16px 0;
   font-size: 16px;
 }
 main .contenedor-acordeon {
@@ -388,7 +387,7 @@ main .info-product button {
   border: none;
   background: none;
   background-color: black;
-  color: white;
+  color: #fff;
   padding: 15px 10px;
 }
 main .tittle {
@@ -440,7 +439,7 @@ footer footer {
 }
 
 .pie-pagina {
-  background: #013c40;
+  background: #015359;
   color: cadetblue;
 }
 
