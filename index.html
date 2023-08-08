@@ -8,6 +8,10 @@
      rel="stylesheet" 
      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
      crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,141 +22,161 @@
     <title>Home</title>
 </head>
 <body>
-  <header class="container-fluid">
-    <div class="row h-100">
-        <div class=" col-sm-12 col-xl-2 col-xxl-2 bg-primary-subtle">
-          <div class="logo">
-            <img src="./images/Apple_logo_grey.png" 
-                 alt="img del logo de mi proyecto">
-          </div>
-         </div>
-        <nav class="col-sm-12 col-xl-10 bg-primary-subtle col-xxl-10 navbar navbar-expand-lg">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="d-flex justify-content-around align-items-center h-100 navbar-nav w-100">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">home</a>
-                    </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./pages/SERVICIOS.html">SERVICIOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./pages/CONTACTO.html">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./pages/NOSOTROS.html">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./pages/PREGUNTASFRECUENTES.html">PREGUNTAS FRECUENTES</a>
-                </li>
-              </ul>
-              </div>
-            </div>
-          </nav>
-    </div>
-</header>
-    <main class="container-fluid">
-      <div class="row h-100">
-          <section class="col-sm-12 col-xl-12 col-xxl-12 bg-light ">
-              <div id="carouselExampleFade" class="carousel slide carousel-fade w-100 ">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="./images/portada.webp"  
-                           class="d-block w-100" 
-                           alt="ultimo producto que saco apple">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./images/iphone2.jpg"
-                           class="d-block w-100" 
-                           alt="producto de apple mas vendido">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./images/iPhone-12-Pro-fondo-neon-portada.jpg" 
-                           class="d-block w-100" 
-                           alt="futuro iphone que va a sacar apple">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                  <h4>Esta es la pagina oficial de apple que brinda sus mejores productos</h4>
-                  <h2>Productos</h2>
-                  <div class="container-items">
-                    <div class="item">
-                      <figure>
-                        <img 
-                            src="./images/producto 1.jpg" 
-                            alt="producto mas vendido en 2023"
-                            >
-                      </figure>
-                      <div class="info-product">
-                        <h2>Iphone 12</h2>
-                        <p class="price">$600</p>
-                        <button>¡Comprar!</button>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <figure>
-                        <img 
-                            src="./images/producto 2.jpg" 
-                            alt="iphone color violeta limitado"
-                            >
-                      </figure>
-                      <div class="info-product">
-                        <h2>Iphone 12 violeta</h2>
-                        <p class="price">$600</p>
-                        <button>¡Comprar!</button>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <figure>
-                        <img 
-                            src="./images/producto 3.jpg"
-                            alt="ultimo iphone que salio"
-                            >
-                      </figure>
-                      <div class="info-product">
-                        <h2>Iphone 14 Pro Max</h2>
-                        <p class="price">$1400</p>
-                        <button>¡Comprar!</button>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <figure>
-                        <img 
-                            src="./images/producto 4.jpg" 
-                            alt="iphone mas recomendado por la empresa"
-                            >
-                      </figure>
-                      <div class="info-product">
-                        <h2>Iphone 13 Pro</h2>
-                        <p class="price">$1100</p>
-                        <button>¡Comprar!</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </section>
+  <header>
+    <div class="navbar">
+      <div class="logo"> <img src="./images/Apple_logo_grey.png" alt="logo apple"></a></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./pages/servicios.html">Servicios</a></li>
+        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+        <li><a href="./pages/registro.html">Registro</a></li>
+        <li><a href="./pages/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+      </ul>
+      <a href="#" class="action_btn">Carrito</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
       </div>
+    </div>
+    <div class="header-carousel">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/portada.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/1366_2000.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/iPhone-14-Pro-portada.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown_menu ">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="./pages/servicios.html">Servicio</a></li>
+        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+        <li><a href="/pages/registro.html">Registro</a></li>
+        <li><a href="./pages/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="#" class="action_btn">Carrito</a></li>
+    </div>
+  </header>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle ('open')
+      const isOpen = dropDownMenu.classList.contains ('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+  <main class="products container" id="lista-1">
+
+    <div class="titulo-product">
+      <h2>Productos</h2>
+    </div>
+
+    <div class="product-content">
+      <div class="product">
+        <figure>
+          <img 
+              src="./images/producto 1.jpg" 
+              alt="producto mas vendido en 2023"
+              >
+        </figure>
+        <div class="info-product">
+          <h2>Iphone 12 64 GB</h2>
+          <p class="price">$550</p>
+          <button>¡Comprar!</button>
+        </div>
+      </div>
+      <div class="product">
+        <figure>
+          <img 
+              src="./images/producto 2.jpg" 
+              alt="iphone color violeta limitado"
+              >
+        </figure>
+        <div class="info-product">
+          <h2>Iphone 12 128 GB</h2>
+          <p class="price">$600</p>
+          <button>¡Comprar!</button>
+        </div>
+      </div>
+      <div class="product">
+        <figure>
+          <img 
+              src="./images/Iphone-XS-Max.jpg" 
+              alt="iphone XS"
+              >
+        </figure>
+        <div class="info-product">
+          <h2>Iphone XS Max 64 GB</h2>
+          <p class="price">$800</p>
+          <button>¡Comprar!</button>
+        </div>
+      </div>
+      <div class="product">
+        <figure>
+          <img 
+              src="./images/D_Q_NP_932957-MLA47782545553_102021-O.webp" 
+              alt="iphone MINI"
+              >
+        </figure>
+        <div class="info-product">
+          <h2>IPhone 13 mini S 128 GB</h2>
+          <p class="price">$850</p>
+          <button>¡Comprar!</button>
+        </div>
+      </div>
+      <div class="product">
+        <figure>
+          <img 
+              src="./images/producto 3.jpg"
+              alt="ultimo iphone que salio"
+              >
+        </figure>
+        <div class="info-product">
+          <h2>Iphone 14 Pro Max 128 GB</h2>
+          <p class="price">$1400</p>
+          <button>¡Comprar!</button>
+        </div>
+      </div>
+      <div class="product">
+        <figure>
+          <img 
+              src="./images/producto 4.jpg" 
+              alt="iphone mas recomendado por la empresa"
+              >
+        </figure>
+        <div class="info-product">
+          <h2>iPhone 13 Pro Max 128 GB</h2>
+          <p class="price">$1100</p>
+          <button>¡Comprar!</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </main>
 </section>
 <footer class="pie-pagina">
-  <div class="box">
-    <h2>¡Siguenos!</h2>
+  <div class="footer-content">
+    <h3>Compania Apple</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed eum tempore animi expedita soluta ratione, impedit aliquam. Tempora commodi temporibus nobis praesentium accusantium ab, doloribus corporis similique illum harum voluptas.</p>
     <div class="red-social">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-youtube"></i>
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"></li><i class="fa-brands fa-youtube"></i></a></li>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <p>copyright &copy;2020 codeOpacity. designe by <span>nethunt</span></p>
   </div>
 </footer>
     <script 

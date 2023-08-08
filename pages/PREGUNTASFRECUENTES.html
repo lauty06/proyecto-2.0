@@ -12,126 +12,165 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c463b928a6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Apple soporte técnico, Ayuda, pregunta">
     <meta name="description" content="Te damos la más cordial bienvenida a la Comunidad de Apple. ¿Tienes una pregunta sobre los productos de Apple que tanto te gustan?">
     <title>PREGUNTAS FRECUENTES</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row h-100">
-          <div class=" col-sm-12 col-xl-2 col-xxl-2 bg-primary-subtle">
-            <div class="logo">
-              <img src="../images/Apple_logo_grey.png" 
-                   alt="img del logo de mi proyecto">
-            </div>
-           </div>
-            <nav class="col-sm-12 col-xl-10 bg-primary-subtle col-xxl-10 navbar navbar-expand-lg">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="d-flex justify-content-around align-items-center h-100 navbar-nav w-100">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html">home</a>
-                    </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./SERVICIOS.html">SERVICIOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./CONTACTO.html">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./NOSOTROS.html">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./PREGUNTASFRECUENTES.html">PREGUNTAS FRECUENTES</a>
-                </li>
-              </ul>
-              </div>
-                </div>
-            </nav>
+  <header>
+    <div class="navbar">
+      <div class="logo"> <img src="../images/Apple_logo_grey.png" alt="logo apple"></a></div>
+      <ul class="links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./servicios.html">Servicios</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./registro.html">Registro</a></li>
+        <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+      </ul>
+      <a href="#" class="action_btn">Carrito</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu ">
+      <li><a href="../index.html">Home</a></li>
+        <li><a href="./servicios.html">Servicio</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./registro.html">Registro</a></li>
+        <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="#" class="action_btn">Carrito</a></li>
+    </div>
+  </header>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle ('open')
+      const isOpen = dropDownMenu.classList.contains ('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+    <main>
+      <div class="contenedor-acordeon">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="acordeon">
+          <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+          <label for="btn-acordeon1">
+            ¿Cómo me comunico con Apple?
+          </label>
+          <div class="contenido-acordeon">
+            <p>Cómo ponerse en contacto con Apple para obtener servicio y soporte técnico - Soporte técnico de Apple
+              España 900812703  |  México 001-866-676-5682  |  Apple Support soporte en línea 
+              
+              Contacto - Cómo contactar con nosotros - Apple (ES) España, consultas sobre compras y productos 
+              
+              Contacto - Cómo contactarnos - Apple (MX) México, consultas sobre compras y productos 
+              
+              Respuestas de colaboradores destacados 
+              
+              Apple Care, Teléfono en México - Comunidad de Apple
+              
+              Ingresar mi numero para el soporte tec… - Comunidad de Apple
+              
+              Hola! Cómo hago para llamar desde Colo… - Comunidad de Apple</p>
+          </div>
         </div>
-    </header>
-    <main class="container-fluid">
-        <div class="row h-100">
-            <section class="col-sm-12 col-xl-12 col-xxl-12 bg-light preguntas">
-              <h1>Preguntas Frecuentes</h1>
-                <details>
-                  <summary>¿Cómo me comunico con Apple?</summary>
-                  <p>Cómo ponerse en contacto con Apple para obtener servicio y soporte técnico - Soporte técnico de Apple
-                    España 900812703  |  México 001-866-676-5682  |  Apple Support soporte en línea 
-                    
-                    Contacto - Cómo contactar con nosotros - Apple (ES) España, consultas sobre compras y productos 
-                    
-                    Contacto - Cómo contactarnos - Apple (MX) México, consultas sobre compras y productos 
-                    
-                    Respuestas de colaboradores destacados 
-                    
-                    Apple Care, Teléfono en México - Comunidad de Apple
-                    
-                    Ingresar mi numero para el soporte tec… - Comunidad de Apple
-                    
-                    Hola! Cómo hago para llamar desde Colo… - Comunidad de Apple</p>
-                </details>
 
-                <details>
-                <summary> ¿Qué hago si veo un mensaje que indica que mi cuenta de Apple ID se ha desactivado en el App Store y iTunes?</summary>
-                  <p>Si ves un mensaje que indica que tu cuenta se ha desactivado en el App Store y iTunes
-                    Cuando veas el mensaje, no intentes editar ningún dato de la cuenta.  Puede que haya un problema con la forma de pago registrada:  ponte en contacto con el Soporte técnico de Apple para obtener ayuda.</p>
-                </details>
-
-                <details>
-                  <summary>¿Cómo saber si mi iPhone fué hackeado? </summary>
-                  <p>el sistema operativo iOS es muy seguro y no deja que haya virus o código malicioso que se pueda instalar en tu sistema operativo. Las actualizaciones de seguridad siempre ayudan a mantener tu dispositivo seguro. 
-                     Si por alguna razón notas algo extraño al acceder páginas de Internet por Safari, te recomiendo que sigas estos pasos para limpiar el historial y las cookies de Safari en tu dispositivo.</p>
-                </details>
-
-                <details>
-                  <summary>¿Cómo actualizo a la versión más reciente de iOS o iPadOS?</summary>
-                  <p>Puedes actualizar tu iPhone, iPad o iPod touch a la versión más reciente de iOS o iPadOS de forma inalámbrica. Si no puedes ver la actualización en el dispositivo, puedes actualizarlo manualmente usando tu ordenador. Antes de actualizar, considera revisar Haz una copia de seguridad del dispositivo usando iCloud o tu ordenador</p>
-                </details>
-
-                <details>
-                  <summary>¿Qué hago si me olvidé del código del iPhone?</summary>
-                  <p>Si olvidas el código de tu iPhone o el iPhone está desactivado
-                    Si no recuerdas el código, tendrás que borrar el iPhone para eliminar todos los datos y ajustes, incluido el código. Si has hecho una copia de seguridad del iPhone, puedes restaurar los datos y la configuración después de restaurar el iPhone.
-                    </p>
-                </details>
-
-                <details>
-                  <summary>¿Qué hago si veo la pantalla de Bloqueo de activación?</summary>
-                  <p>Cómo eliminar el Bloqueo de activación
-                    Qué hacer si ves la pantalla de Bloqueo de activación en el dispositivo o si se te pide que elimines el bloqueo de activación de un dispositivo que no está en tu poder. 
-                    
-                    Respuestas
-                    
-                    BLOQUEO DE ACTIVACIÓN - Comunidad de Apple
-                    
-                    Bloqueo de activacion - Comunidad de Apple
-                    
-                    iPhone desactivado - Comunidad de Apple
-                    
-                    
-                    
-                    Cómo transferir datos a un nuevo iPhone
-                    
-                    A partir de iOS 15, puedes usar iCloud para transferir apps y datos de tu iPhone anterior a un dispositivo completamente nuevo, aunque no tengas suficiente espacio de almacenamiento. Obtendrás el almacenamiento temporal de iCloud necesario para el respaldo de tus apps y datos durante 21 días. 
-                    
-                    Obtener almacenamiento de iCloud temporal al comprar un nuevo iPhone o iPad - Soporte técnico de Apple (ES)</p>
-                </details>
-            </section>
+        <div class="acordeon">
+          <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+          <label for="btn-acordeon2">
+            ¿Qué hago si veo un mensaje que indica que mi cuenta de Apple ID se ha desactivado en el App Store y iTunes?
+          </label>
+          <div class="contenido-acordeon">
+            <p>Si ves un mensaje que indica que tu cuenta se ha desactivado en el App Store y iTunes
+              Cuando veas el mensaje, no intentes editar ningún dato de la cuenta.  Puede que haya un problema con la forma de pago registrada:  ponte en contacto con el Soporte técnico de Apple para obtener ayuda.</p>
+          </div>
         </div>
+
+        <div class="acordeon">
+          <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+          <label for="btn-acordeon3">
+            ¿Cómo saber si mi iPhone fué hackeado? 
+          </label>
+          <div class="contenido-acordeon">
+            <p>el sistema operativo iOS es muy seguro y no deja que haya virus o código malicioso que se pueda instalar en tu sistema operativo. Las actualizaciones de seguridad siempre ayudan a mantener tu dispositivo seguro. 
+              Si por alguna razón notas algo extraño al acceder páginas de Internet por Safari, te recomiendo que sigas estos pasos para limpiar el historial y las cookies de Safari en tu dispositivo.</p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+          <label for="btn-acordeon4">
+            ¿Cómo actualizo a la versión más reciente de iOS o iPadOS?
+          </label>
+          <div class="contenido-acordeon">
+            <p>Puedes actualizar tu iPhone, iPad o iPod touch a la versión más reciente de iOS o iPadOS de forma inalámbrica. Si no puedes ver la actualización en el dispositivo, puedes actualizarlo manualmente usando tu ordenador. Antes de actualizar, considera revisar Haz una copia de seguridad del dispositivo usando iCloud o tu ordenador</p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="radio" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+          <label for="btn-acordeon5">
+            ¿Qué hago si me olvidé del código del iPhone?
+          </label>
+          <div class="contenido-acordeon">
+            <p>Si olvidas el código de tu iPhone o el iPhone está desactivado
+              Si no recuerdas el código, tendrás que borrar el iPhone para eliminar todos los datos y ajustes, incluido el código. Si has hecho una copia de seguridad del iPhone, puedes restaurar los datos y la configuración después de restaurar el iPhone.
+          </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="radio" name="acordeon" id="btn-acordeon6" class="btn-acordeon">
+          <label for="btn-acordeon6">
+            ¿Qué hago si veo la pantalla de Bloqueo de activación?
+          </label>
+          <div class="contenido-acordeon">
+            <p>Cómo eliminar el Bloqueo de activación
+              Qué hacer si ves la pantalla de Bloqueo de activación en el dispositivo o si se te pide que elimines el bloqueo de activación de un dispositivo que no está en tu poder. 
+              
+              Respuestas
+              
+              BLOQUEO DE ACTIVACIÓN - Comunidad de Apple
+              
+              Bloqueo de activacion - Comunidad de Apple
+              
+              iPhone desactivado - Comunidad de Apple
+              
+              
+              
+              Cómo transferir datos a un nuevo iPhone
+              
+              A partir de iOS 15, puedes usar iCloud para transferir apps y datos de tu iPhone anterior a un dispositivo completamente nuevo, aunque no tengas suficiente espacio de almacenamiento. Obtendrás el almacenamiento temporal de iCloud necesario para el respaldo de tus apps y datos durante 21 días. 
+              
+              Obtener almacenamiento de iCloud temporal al comprar un nuevo iPhone o iPad - Soporte técnico de Apple (ES)</p>
+          </div>
+        </div>
+      
+      </div>
     </main>
     <footer class="pie-pagina">
-      <div class="box">
-        <h2>¡Siguenos!</h2>
+      <div class="footer-content">
+        <h3>Compania Apple</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed eum tempore animi expedita soluta ratione, impedit aliquam. Tempora commodi temporibus nobis praesentium accusantium ab, doloribus corporis similique illum harum voluptas.</p>
         <div class="red-social">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-youtube"></i>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"></li><i class="fa-brands fa-youtube"></i></a></li>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2020 codeOpacity. designe by <span>nethunt</span></p>
       </div>
     </footer>
     <script 
