@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Oswald:wght@200;300;500;600&display=swap');
+background:linear-gradient(90deg, rgba(0,181,176,1) 0%, rgba(0,54,55,0.8715861344537815) 51%, rgba(0,170,184,1) 100%);
+$bodycolor:red;
 
 body{
     width: 100%;
@@ -7,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background:linear-gradient(90deg, rgba(0,181,176,1) 0%, rgba(0,54,55,0.8715861344537815) 51%, rgba(0,170,184,1) 100%);
+    background: $bodycolor;
   }
   img{
     max-width: 100%;
